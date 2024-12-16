@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali's Website</title>
+    <style>
+        /* Background Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #ffffff;
+            background: linear-gradient(135deg, #1d2d36, #3a506b);
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Add floating circles for decoration */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: move 20s infinite alternate;
+        }
+
+        .circle:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 10%;
+            left: 10%;
+        }
+
+        .circle:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            bottom: 20%;
+            right: 15%;
+        }
+
+        .circle:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            left: 50%;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(0) translateX(0);
+            }
+            to {
+                transform: translateY(-20px) translateX(20px);
+            }
+        }
+
+        /* Content Styling */
+        h1, h2 {
+            margin-top: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <!-- Main Content -->
+    <h1>Welcome to Ali's Website</h1>
+    <h2>أهلاً وسهلاً في موقع علي</h2>
+</body>
+</html>
